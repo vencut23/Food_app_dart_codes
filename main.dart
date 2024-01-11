@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/Homepage.dart';
+import 'package:flutter_application_2/Homepage.dart';
 
 void main(){
+    imageCache.clear();
      runApp(const MyApp());
+   
 }
 
 
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(254,206,1,1),
+        primary: Color.fromRGBO(254,206,1,1),
+        ),
         fontFamily: 'pacific',
       ),
          home: HomePage(),
